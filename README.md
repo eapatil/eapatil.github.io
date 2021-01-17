@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <style>
-/* https://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -138,7 +130,7 @@ main p {
   -moz-transform: translateX(100%);
   -ms-transform: translateX(100%);
   -o-transform: translateX(100%);
-  transform: translateX(100%);
+  transform: translateX(400%);
 }
 @media only screen and (min-width: 768px) {
   main {
@@ -465,7 +457,6 @@ main p {
 color: #FFF;
 }
 </style>
-</head>
 <body>
 
 
