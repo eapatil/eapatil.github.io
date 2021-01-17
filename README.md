@@ -147,7 +147,7 @@ main p {
 .cd-nav-trigger {
   position: fixed;
   z-index: 3;
-  left: 5%;
+  left: 2%;
   top: 20px;
   height: 54px;
   width: 54px;
