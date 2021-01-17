@@ -478,6 +478,9 @@ footer.site-footer {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: #555;
 }
+h1.project-name {
+    margin-top: 1%;
+}
 </style>
 <body>
 
