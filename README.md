@@ -74,6 +74,7 @@ body {
 body, html {
   /* prevent horizontal scrolling */
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 a {
