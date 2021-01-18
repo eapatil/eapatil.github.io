@@ -74,7 +74,6 @@ body {
 body, html {
   /* prevent horizontal scrolling */
   overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 a {
@@ -552,7 +551,7 @@ h1.eli {
 	width: 90%;
     margin: 0 auto;
 	margin-left: 0px;
-	margin-top: 60%;
+	margin-top: 80%;
 	width: 90vw;
 
 }
