@@ -73,48 +73,7 @@ a {
   color: #9cb3a8;
   text-decoration: none;
 }
-/* -------------------------------- 
-Main Components 
--------------------------------- */
-main {
-  position: relative;
-  z-index: 2;
-  /* fix bug on iOS */
-  /* height: 100vh; */
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  padding: 200px 5%;
-  background-color: #000;
-  /* Force Hardware Acceleration in WebKit */
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transition: -webkit-transform 0.7s;
-  -moz-transition: -moz-transform 0.7s;
-  transition: transform 0.7s;
-  -webkit-transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
-  -moz-transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
-  transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
-}
-main h1, main p {
-  text-align: center;
-}
-main h1 {
-  font-size: 2.6rem;
-  margin-bottom: 1em;
-   color: #d6dfdb;
-}
-main p {
-  font-family: "Merriweather", serif;
-  color: #999;
-  max-width: 450px;
-  margin: 0 auto;
-  line-height: 1.6;
-}
+
 .navigation-is-open main {
   -webkit-transform: translateX(100%);
   -moz-transform: translateX(100%);
@@ -522,6 +481,18 @@ i {
 .type a {
     text-decoration: none;
 	color: #006dcc;
+}
+@media (max-width: 480px) {
+h1.eli {
+    top: 50%;
+    margin-left: 0px;
+}
+.type {
+	margin-left: 0px;
+	margin-top: 80%;
+	width: 90vw;
+
+}
 }
 </style>
 <body>
