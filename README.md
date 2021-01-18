@@ -545,11 +545,11 @@ i {
 @media (max-width: 480px) {  
 h1.project-name {margin-top: 5%;}
 h1.eli {
-    top: 10%;
+    top: 50%;
     margin-left: 0px;
 }
 .type {
-    top: 10%;
+    top: 40%;
     margin: 0 auto;
 	margin-left: 0px;
 	margin-top: 10%;
@@ -570,7 +570,7 @@ h1.eli {
     border-radius: 20px;"></p>
 <p><span>Eleazer A Patil</span><br><em style="/* text-decoration: dashed; */text-decoration: i;font-style: italic;">Sr. SharePoint Web Content Publisher at Deloitte</em></p>
 <p>I have extensive and rich experience in developing User Interface. Proficient in web development with dynamic interactivity. Have delivered end to end projects in SharePoint and provided automation solutions in many verticals. </p>
-<p><span><a href="https://www.linkedin.com/in/epatil/" target="_blank" rel="noopener"><img src="https://www.pngkey.com/png/detail/80-802453_2018-supply-chain-solutions-linkedin-view-my-linkedin.png" alt="" width="140" /></a></span> <span><a href="https://trailblazer.me/id/eapatil" target="_blank" rel="noopener"><img src="https://trailblazer.me/resource/1608686754000/assets/assets/images/profile/trailblazer-me.svg" alt="" width="200" style="background-color: #FFF; padding: 10px; margin-left: 10px;"></a></span> </p>
+<p><span><a href="https://www.linkedin.com/in/epatil/" target="_blank" rel="noopener"><img src="https://www.pngkey.com/png/detail/80-802453_2018-supply-chain-solutions-linkedin-view-my-linkedin.png" alt="" width="140" style="margin-right: 10px;"></a></span> <span><a href="https://trailblazer.me/id/eapatil" target="_blank" rel="noopener"><img src="https://trailblazer.me/resource/1608686754000/assets/assets/images/profile/trailblazer-me.svg" alt="" width="200" style="background-color: #FFF; padding: 10px;"></a></span> </p>
 
 
 
