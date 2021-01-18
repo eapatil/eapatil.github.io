@@ -484,15 +484,84 @@ h1.project-name {margin-top: 1%;}
 @media (max-width: 480px) {  
 h1.project-name {margin-top: 5%;}
 }
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    color: inherit;
+}
+
+body {
+    background-image: linear-gradient(120deg, #4f0088 0%, #000000 100%);
+    height: 100vh;
+}
+
+h1 {
+    font-size: 25vw;
+    text-align: center;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+    color: #ffffff26;
+    text-shadow: 0 0 50px rgba(0, 0, 0, 0.07);
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "Montserrat", monospace;
+}
+.type {
+    background: rgba(0, 0, 0, 0);
+    width: 70vw;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    padding: 30px 30px 10px;
+    box-shadow: 0 0 150px -20px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+P {
+    color: #f5f5f5;
+    margin: 0 0 20px;
+    font-size: 17px;
+    line-height: 1.2;
+}
+
+span {
+    color: #f0c674;
+}
+
+i {
+    color: #FFF;
+    font-weight: bold;
+}
+.type a {
+    text-decoration: none;
+	color: #006dcc;
+}
 </style>
 <body>
 
+<h1>Eleazer</h1>
+	<!-- <main> -->
+		<!-- <h1>My Projects</h1> -->
 
-	<main>
-		<h1>My Projects</h1>
+		<!-- <p>Click on the hamburger menu to explore</p> -->
+	<!-- </main> -->
+	
+	<div class="type"><p><i>Welcome to my Personal project website</i></p>
+<p><span>Name</span>: Eleazer A Patil <br> Sr. SharePoint Web Content Publisher at Deloitte</p>
+<p><span>About</span>: I have extensive and rich experience in developing User Interface. Proficient in web development with dynamic interactivity. Have delivered end to end projects in SharePoint and provided automation solutions in many verticals. </p>
+<p><span><a href="https://www.linkedin.com/in/epatil/" target="_blank" rel="noopener"><img src="https://www.pngkey.com/png/detail/80-802453_2018-supply-chain-solutions-linkedin-view-my-linkedin.png" alt="" width="140" /></a></span> <span><a href="https://trailblazer.me/id/eapatil" target="_blank" rel="noopener"><img src="https://trailblazer.me/resource/1608686754000/assets/assets/images/profile/trailblazer-me.svg" alt="" width="200" style="background-color: #FFF; padding: 10px; margin-left: 10px;"></a></span> </p>
 
-		<p>Click on the hamburger menu to explore</p>
-	</main>
+
+
+<p>Click on the hamburger menu to explore</p>
+
+</div>
 
 	<a href="#cd-nav" class="cd-nav-trigger">Menu 
 		<span class="cd-nav-icon"></span>
@@ -553,4 +622,20 @@ jQuery(document).ready(function($){
 		}
 	});
 });
+</script>
+<script>
+var str = document.getElementsByClassName('type')[0].innerHTML.toString();
+var i = 0;
+document.getElementsByClassName('type')[0].innerHTML = "";
+
+setTimeout(function() {
+    var se = setInterval(function() {
+        i++;
+        document.getElementsByClassName('type')[0].innerHTML = str.slice(0, i) + "|";
+        if (i == str.length) {
+            clearInterval(se);
+            document.getElementsByClassName('type')[0].innerHTML = str;
+        }
+    }, 10);
+},0);
 </script>
