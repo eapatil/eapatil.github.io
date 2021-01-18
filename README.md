@@ -455,6 +455,7 @@ main p {
 }
 .cd-nav .cd-primary-nav a:hover{
 color: #FFF;
+text-decoration: none;
 }
 footer.site-footer {
     display: none !important;
