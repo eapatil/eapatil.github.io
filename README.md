@@ -524,10 +524,7 @@ h1.eli {
 				<nav>
 					<ul class="cd-primary-nav">
 						<li><a href="Loaders">CSS Loaders</a></li>
-						<li><a href="#">Navigation Bars</a></li>
-						<li><a href="#">Grid layouts</a></li>
-						<li><a href="#">Carousel's</a></li>
-						<li><a href="#">Other</a></li>
+						<li><a href="RTSC">Responsive Text Size Converter</a></li>
 					</ul>
 				</nav>
 			</div><!-- .cd-half-block -->
