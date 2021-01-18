@@ -545,14 +545,14 @@ i {
 @media (max-width: 480px) {  
 h1.project-name {margin-top: 5%;}
 h1.eli {
-    top: 0px;
+    top: 10%;
     margin-left: 0px;
 }
 .type {
-    top: 0px;
+    top: 10%;
     margin: 0 auto;
 	margin-left: 0px;
-	margin-top: 0px;
+	margin-top: 10%;
 
 }
 }
