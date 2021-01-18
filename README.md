@@ -91,7 +91,7 @@ main {
   position: relative;
   z-index: 2;
   /* fix bug on iOS */
-  height: 100vh;
+  /* height: 100vh; */
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   padding: 200px 5%;
@@ -135,7 +135,7 @@ main p {
 }
 @media only screen and (min-width: 768px) {
   main {
-    padding: 250px 10%;
+    
   }
   main h1 {
     font-size: 3.6rem;
