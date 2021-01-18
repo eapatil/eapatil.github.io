@@ -549,11 +549,11 @@ h1.eli {
     margin-left: 0px;
 }
 .type {
-    top: 80%;
 	width: 90%;
     margin: 0 auto;
 	margin-left: 0px;
-	margin-top: 10%;
+	margin-top: 40%;
+	width: 90vw;
 
 }
 }
