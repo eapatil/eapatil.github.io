@@ -368,14 +368,39 @@
   opacity: 1;
   right: 0;
 }
-button.button {
+button.button.Top {
     position: fixed;
     bottom: 0px;
     right: 10px;
 }
+button.button.Bottom {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 5px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
     </style>
 </head>
 <body>
+<button onclick="location.href='https://eapatil.github.io/'" type="button" class="button Top" style="vertical-align:middle"><span>Back</span></button>
     <!-- GRADIENT SPINNER -->
 <div class="spinner">
     <div class="circle-border">
@@ -445,6 +470,6 @@ button.button {
     </div>
   </div>
   
-  <button onclick="location.href='https://eapatil.github.io/'" type="button" class="button" style="vertical-align:middle"><span>Back</span></button>
+  <button onclick="location.href='https://eapatil.github.io/'" type="button" class="button Bottom" style="vertical-align:middle"><span>Back</span></button>
 </body>
 </html>
