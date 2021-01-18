@@ -500,7 +500,7 @@ body {
     height: 100vh;
 }
 
-h1 {
+h1.eli {
     font-size: 25vw;
     text-align: center;
     position: fixed;
@@ -545,7 +545,7 @@ i {
 </style>
 <body>
 
-<h1>Eleazer</h1>
+<h1 class="eli">Eleazer</h1>
 	<!-- <main> -->
 		<!-- <h1>My Projects</h1> -->
 
