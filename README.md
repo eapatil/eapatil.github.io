@@ -463,6 +463,7 @@ h1.eli {
     box-shadow: 0 0 150px -20px rgba(0, 0, 0, 0.5);
 	margin-left: -50%;
 	margin-top: 40%;
+	border-radius: 10px;
     z-index: 1;
 }
 P {
