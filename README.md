@@ -510,7 +510,7 @@ h1.eli {
     text-shadow: 0 0 50px rgba(0, 0, 0, 0.07);
     top: 50%;
     transform: translateY(-50%);
-    font-family: "Montserrat", monospace;
+    margin-left: -34%;
 }
 .type {
     background: rgba(0, 0, 0, 0);
@@ -521,6 +521,7 @@ h1.eli {
     margin: 0 auto;
     padding: 30px 30px 10px;
     box-shadow: 0 0 150px -20px rgba(0, 0, 0, 0.5);
+	margin-left: -50%;
     z-index: 1;
 }
 P {
