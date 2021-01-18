@@ -554,8 +554,7 @@ i {
 		<!-- <p>Click on the hamburger menu to explore</p> -->
 	<!-- </main> -->
 	
-	<div class="type"><p><i>Welcome to my Personal project website</i></p>
-	<p><img src="https://avatars2.githubusercontent.com/u/20547953?s=460&amp;u=9b920c74e7b413f8b64be506e35c114fa8655686&amp;v=4" alt="" style="
+	<div class="type"><p><img src="https://avatars2.githubusercontent.com/u/20547953?s=460&amp;u=9b920c74e7b413f8b64be506e35c114fa8655686&amp;v=4" alt="" style="
     border-radius: 20px;"></p>
 <p><span>Eleazer A Patil</span><br><em style="/* text-decoration: dashed; */text-decoration: i;font-style: italic;">Sr. SharePoint Web Content Publisher at Deloitte</em></p>
 <p>I have extensive and rich experience in developing User Interface. Proficient in web development with dynamic interactivity. Have delivered end to end projects in SharePoint and provided automation solutions in many verticals. </p>
