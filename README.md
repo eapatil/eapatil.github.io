@@ -552,7 +552,7 @@ h1.eli {
 	width: 90%;
     margin: 0 auto;
 	margin-left: 0px;
-	margin-top: 40%;
+	margin-top: 60%;
 	width: 90vw;
 
 }
