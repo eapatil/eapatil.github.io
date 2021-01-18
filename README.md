@@ -481,9 +481,7 @@ footer.site-footer {
 	background-color: #555;
 }
 h1.project-name {margin-top: 1%;}
-@media (max-width: 480px) {  
-h1.project-name {margin-top: 5%;}
-}
+
 * {
     margin: 0;
     padding: 0;
@@ -543,6 +541,20 @@ i {
 .type a {
     text-decoration: none;
 	color: #006dcc;
+}
+@media (max-width: 480px) {  
+h1.project-name {margin-top: 5%;}
+h1.eli {
+    top: 0px;
+    margin-left: 0px;
+}
+.type {
+    top: 0px;
+    margin: 0 auto;
+	margin-left: 0px;
+	margin-top: 0px;
+
+}
 }
 </style>
 <body>
