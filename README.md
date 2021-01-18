@@ -438,6 +438,23 @@ h1.eli {
 		</div> <!-- .cd-navigation-wrapper -->
 	</div> <!-- .cd-nav -->
 </body>
+
+<script>
+var str = document.getElementsByClassName('type')[0].innerHTML.toString();
+var i = 0;
+document.getElementsByClassName('type')[0].innerHTML = "";
+
+setTimeout(function() {
+    var se = setInterval(function() {
+        i++;
+        document.getElementsByClassName('type')[0].innerHTML = str.slice(0, i) + "|";
+        if (i == str.length) {
+            clearInterval(se);
+            document.getElementsByClassName('type')[0].innerHTML = str;
+        }
+    }, 10);
+},0);
+</script>
 <script>
 jQuery(document).ready(function($){
 	var isLateralNavAnimating = false;
@@ -457,20 +474,4 @@ jQuery(document).ready(function($){
 		}
 	});
 });
-</script>
-<script>
-var str = document.getElementsByClassName('type')[0].innerHTML.toString();
-var i = 0;
-document.getElementsByClassName('type')[0].innerHTML = "";
-
-setTimeout(function() {
-    var se = setInterval(function() {
-        i++;
-        document.getElementsByClassName('type')[0].innerHTML = str.slice(0, i) + "|";
-        if (i == str.length) {
-            clearInterval(se);
-            document.getElementsByClassName('type')[0].innerHTML = str;
-        }
-    }, 10);
-},0);
 </script>
