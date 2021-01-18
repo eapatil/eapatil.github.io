@@ -1,4 +1,5 @@
-
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<link href='https://github.com/eapatil/eapatil.github.io/blob/main/home.css' rel='stylesheet' type='text/css'>
 <body>
 
 
@@ -48,3 +49,4 @@
 		</div> <!-- .cd-navigation-wrapper -->
 	</div> <!-- .cd-nav -->
 </body>
+<script src="https://github.com/eapatil/eapatil.github.io/blob/main/n.js"></script>
