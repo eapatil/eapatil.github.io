@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Responsive Text Size Converter</title>
+<style>
+nav {
+    width: 100%;
+    height: 12.5vh;
+    background-color: #252831;
+    text-align: center;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #000;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+nav h1 {
+    margin: 0 auto;
+    padding-top: 14px;
+    font-size: 1.3rem;
+    transition: 1s;
+}
+
+div {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+#footer {
+    background-color: #444;
+    color: #aaa;
+    font-size: 1.56vh;
+    letter-spacing: 1px;
+    padding: 3.91vh;
+    text-align: center;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+h1 {
+    color: #aaa;
+    text-decoration: none;
+}
+
+main {
+    background-color: #222;
+    min-height: 78vh;
+    margin: 0;
+    text-align: center;
+}
+
+
+/* This removes the counter buttons on the input field */
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.pixelToVH,
+.pixelToVW,
+.vwToPixel,
+.vhToPixel {
+    width: 160px;
+    height: 35px;
+    padding-left: 15px;
+    border: none;
+    border-radius: 20px;
+    margin: 10px;
+    background: #888;
+}
+
+input {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.text {
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-top: 12px;
+    color: #FFF;
+    text-decoration: none;
+    border-bottom: solid 2px green;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.result {
+    display: inline-block;
+    margin-top: -7px;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 900;
+}
+  .button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #000;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.915184678522572vh;
+  padding: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00ab';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+button.button.Top {
+    position: fixed;
+    bottom: 0px;
+    right: 10px;
+}
+button.button.Bottom {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 5px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+@media screen and (min-width: 500px) {
+    nav h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+div {width: 100%;}
+main {min-height: 100vh;}
+button.button.Bottom {display: none !important;}
+}
+</style>
+</head>
+<button onclick="location.href='https://eapatil.github.io/'" type="button" class="button Top" style="vertical-align:middle"><span>Back</span></button>
+  <header>
+    <nav>
+      <h1>
+        Responsive Text Size Converter
+      </h1>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1 -->
+    <div>
+      <span class="text">Pixels (px)<br> to<br> Viewport height (vh)</span>
+      <br>
+      <input class="pixelToVH" type="number" onkeyup="pixelToVH(this.value);">
+      <br>
+      <span class="result" id="pixelToVH">Result</span>
+    </div>
+    <!-- 2 -->
+    <div>
+      <span class="text">Pixels (px) <br> to<br> Viewport width (vw)</span>
+      <br>
+      <input class="pixelToVW" type="number" onkeyup="pixelToVW(this.value);">
+      <br>
+      <span class="result" id="pixelToVW">Result</span>
+    </div>
+    <!-- 3 -->
+    <div>
+      <span class="text">Viewport height (vh) <br> to<br> Pixels (px)</span>
+      <br>
+      <input class="vhToPixel" type="number" onkeyup="vhToPixel(this.value);">
+      <br>
+      <span class="result" id="vhToPixel">Result</span>
+    </div>
+    <!-- 4 -->
+    <div>
+      <span class="text">Viewport width (vw) <br> to<br> Pixels (px)</span>
+      <br>
+      <input class="vwToPixel" type="number" onkeyup="vwToPixel(this.value);">
+      <br>
+      <span class="result" id="vwToPixel">Result</span>
+    </div>
+
+  </main>
+
+  <button onclick="location.href='https://eapatil.github.io/'" type="button" class="button Bottom" style="vertical-align:middle"><span>Back</span></button>
+  <footer id="footer">
+    Developed by Eleazer - For personal use 
+  </footer>
+
+<script>
+  function pixelToVH(value) {
+    return document.querySelector("#pixelToVH").innerHTML = `Result = ${(100 * value) / window.innerHeight}vh`;
+  }
+  function pixelToVW(value) {
+    return document.querySelector("#pixelToVW").innerHTML = `Result = ${(100 * value) / window.innerWidth}vw`;
+  }
+  function vhToPixel(value) {
+    return document.querySelector("#vhToPixel").innerHTML = `Result = ${(window.innerHeight * value) / 100}px`;
+  }
+  function vwToPixel(value) {
+    return document.querySelector("#vwToPixel").innerHTML = `Result = ${((window.innerWidth * value) / 100)}px`;
+  }
+
+  window.addEventListener('resize', updateMeasurements)
+  function updateMeasurements() {
+    const pixelToVHValue = document.querySelector('.pixelToVH').value
+    const pixelToVWValue = document.querySelector('.pixelToVW').value
+    const vhToPixelValue = document.querySelector('.vhToPixel').value
+    const vwToPixelValue = document.querySelector('.vwToPixel').value
+    pixelToVH(pixelToVHValue)
+    pixelToVW(pixelToVWValue)
+    vhToPixel(vhToPixelValue)
+    vwToPixel(vwToPixelValue)
+  }
+
+</script>
+
+</body></html>
