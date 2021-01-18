@@ -522,6 +522,7 @@ h1.eli {
     padding: 30px 30px 10px;
     box-shadow: 0 0 150px -20px rgba(0, 0, 0, 0.5);
 	margin-left: -50%;
+	margin-top: 40%;
     z-index: 1;
 }
 P {
