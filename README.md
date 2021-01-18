@@ -510,7 +510,7 @@ h1.project-name {margin-top: 5%;}
 					<ul class="cd-primary-nav">
 						<li><a href="#0">CSS Loaders</a></li>
 						<li><a href="#0">Navigation Bars</a></li>
-						<li><a href="#0">Grids layouts</a></li>
+						<li><a href="#0">Grid layouts</a></li>
 						<li><a href="#0">Carousel's</a></li>
 						<li><a href="#0">Other</a></li>
 					</ul>
