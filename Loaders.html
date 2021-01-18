@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loaders</title>
     <style>
-	.parent {
-    width: 100%;
-    display: inline-flex;
-}
         /* KEYFRAMES */
 
 @keyframes spin {
@@ -334,10 +330,52 @@
     border-radius: 50%;
     animation: spin .5s linear 0s infinite;
   }
+  .button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #000;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00ab';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+button.button {
+    position: fixed;
+    bottom: 0px;
+    right: 10px;
+}
     </style>
 </head>
 <body>
-<div class="parent">
     <!-- GRADIENT SPINNER -->
 <div class="spinner-box">
     <div class="circle-border">
@@ -407,12 +445,6 @@
     </div>
   </div>
   
-  <!-- Three Quarter Spinner -->
-  
-  <div class="spinner-box">
-    <div class="three-quarter-spinner"></div>
-  </div>
-  
-  </div>
+  <button onclick="location.href='https://eapatil.github.io/'" type="button" class="button" style="vertical-align:middle"><span>Back</span></button>
 </body>
 </html>
