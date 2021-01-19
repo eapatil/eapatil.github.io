@@ -525,6 +525,7 @@ h1.eli {
 					<ul class="cd-primary-nav">
 						<li><a href="Loaders">CSS Loaders</a></li>
 						<li><a href="RTSC">Responsive Text Size Converter</a></li>
+						<li><a href="PS">Parallax Scrolling</a></li>
 					</ul>
 				</nav>
 			</div><!-- .cd-half-block -->
