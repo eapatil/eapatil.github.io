@@ -486,6 +486,15 @@ i {
     text-decoration: none;
 	color: #006dcc;
 }
+@media (min-width: 768px) and (max-width: 979px) {
+
+.type {
+    margin-left: 10px;
+    width: 90vw;
+    height: 575px;
+}
+
+}
 @media (max-width: 480px) {
 h1.eli {
     top: 50%;
