@@ -492,7 +492,7 @@ i {
 @media (min-width: 768px) and (max-width: 979px) {
 
 .type {
-    margin-left: 10px;
+    margin: 0 auto;
     width: 90vw;
     height: 575px;
     margin-top: 40%;
@@ -505,7 +505,7 @@ h1.eli {
     margin-left: 0px;
 }
 .type {
-	margin-left: 10px;
+	margin: 0 auto;
 	margin-top: 80%;
 	width: 90vw;
 	height: 720px;
