@@ -506,7 +506,7 @@ h1.eli {
 }
 .type {
 	margin: 0 auto;
-	margin-top: 80%;
+	margin-top: 90%;
 	width: 90vw;
 	height: 720px;
 
