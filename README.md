@@ -467,7 +467,7 @@ h1.eli {
     box-shadow: 0 8px 32px 0 rgb(0 255 111 / 97%);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    margin-top: 14%;
+    margin-top: 15%;
     border-radius: 10px;
     z-index: 1;
     height: 530px;
@@ -495,6 +495,7 @@ i {
     margin-left: 10px;
     width: 90vw;
     height: 575px;
+    margin-top: 40%;
 }
 
 }
