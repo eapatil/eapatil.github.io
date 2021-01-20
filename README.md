@@ -460,10 +460,12 @@ h1.eli {
     transform: translateY(-50%);
     margin: 0 auto;
     padding: 30px 30px 10px;
-    box-shadow: 0 0 150px -20px rgba(0, 0, 0, 0.5);
-	margin-left: -50%;
-	margin-top: 40%;
-	border-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgb(0 255 111 / 97%);    
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    margin-left: -50%;
+    margin-top: 40%;
+    border-radius: 10px;
     z-index: 1;
 }
 P {
