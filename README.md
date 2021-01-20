@@ -455,21 +455,19 @@ h1.eli {
     text-shadow: 0 0 50px rgba(0, 0, 0, 0.07);
     top: 50%;
     transform: translateY(-50%);
-    margin-left: -34%;
+    margin: 0 auto;
 }
 .type {
     background: rgba(0, 0, 0, 0);
     width: 70vw;
     position: relative;
-    top: 50%;
     transform: translateY(-50%);
     margin: 0 auto;
     padding: 30px 30px 10px;
-    box-shadow: 0 8px 32px 0 rgb(0 255 111 / 97%);    
+    box-shadow: 0 8px 32px 0 rgb(0 255 111 / 97%);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    margin-left: -50%;
-    margin-top: 40%;
+    margin-top: 14%;
     border-radius: 10px;
     z-index: 1;
     height: 530px;
