@@ -467,6 +467,7 @@ h1.eli {
     margin-top: 40%;
     border-radius: 10px;
     z-index: 1;
+    height: 530px;
 }
 P {
     color: #f5f5f5;
