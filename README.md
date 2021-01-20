@@ -460,14 +460,11 @@ h1.eli {
     transform: translateY(-50%);
     margin: 0 auto;
     padding: 30px 30px 10px;
-    box-shadow: 0 8px 32px 0 rgb(0 255 111 / 97%);    
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    margin-left: -50%;
-    margin-top: 40%;
-    border-radius: 10px;
+    box-shadow: 0 0 150px -20px rgba(0, 0, 0, 0.5);
+	margin-left: -50%;
+	margin-top: 40%;
+	border-radius: 10px;
     z-index: 1;
-	visibility: hidden;
 }
 P {
     color: #f5f5f5;
@@ -499,14 +496,14 @@ h1.eli {
 }
 }
 </style>
-<body onload="showdiv();">
+<body>
 <h1 class="eli">Eleazer</h1>
 	<!-- <main> -->
 		<!-- <h1>My Projects</h1> -->
 		<!-- <p>Click on the hamburger menu to explore</p> -->
 	<!-- </main> -->
 	
-	<div class="type" id="delay"><p><img src="https://avatars2.githubusercontent.com/u/20547953?s=460&amp;u=9b920c74e7b413f8b64be506e35c114fa8655686&amp;v=4" alt="" style="
+	<div class="type"><p><img src="https://avatars2.githubusercontent.com/u/20547953?s=460&amp;u=9b920c74e7b413f8b64be506e35c114fa8655686&amp;v=4" alt="" style="
     border-radius: 20px;"></p>
 <p><span>Eleazer A Patil</span><br><em style="font-style: italic;">Sr. SharePoint Web Content Publisher at Deloitte</em></p>
 <p>I have extensive and rich experience in developing User Interface. Proficient in web development with dynamic interactivity. Have delivered end to end projects in SharePoint and provided automation solutions in many verticals. </p>
@@ -527,8 +524,10 @@ h1.eli {
 				<nav>
 					<ul class="cd-primary-nav">
 						<li><a href="Loaders">CSS Loaders</a></li>
-						<li><a href="RTSC">Responsive Text Size Converter</a></li>
-						<li><a href="PS">Parallax Scrolling</a></li>
+						<li><a href="#">Navigation Bars</a></li>
+						<li><a href="#">Grid layouts</a></li>
+						<li><a href="#">Carousel's</a></li>
+						<li><a href="#">Other</a></li>
 					</ul>
 				</nav>
 			</div><!-- .cd-half-block -->
@@ -549,13 +548,6 @@ h1.eli {
 		</div> <!-- .cd-navigation-wrapper -->
 	</div> <!-- .cd-nav -->
 </body>
-<script>
-    function showdiv() {
-        setTimeout(function () {
-            document.getElementById("delay").style.visibility = "visible";
-        }, 5000);
-    }
-</script>
 <script>
 jQuery(document).ready(function($){
 	var isLateralNavAnimating = false;
@@ -588,6 +580,6 @@ setTimeout(function() {
             clearInterval(se);
             document.getElementsByClassName('type')[0].innerHTML = str;
         }
-    }, 50);
+    }, 10);
 },0);
 </script>
