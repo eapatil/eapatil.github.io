@@ -495,6 +495,7 @@ h1.eli {
 	margin-left: 0px;
 	margin-top: 80%;
 	width: 90vw;
+	height: auto;
 
 }
 }
