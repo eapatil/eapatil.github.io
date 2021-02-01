@@ -4,8 +4,22 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Responsive Text Size Converter</title>
-		      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script type="text/javascript">window.oncontextmenu=function(){return!1},$(document).keydown(function(e){return 123!=e.keyCode&&(!(e.ctrlKey&&e.shiftKey&&73==e.keyCode||e.ctrlKey&&e.shiftKey&&74==e.keyCode)&&void 0)}),$(document).bind("keydown","ctrl+s",function(){return $("#save").click(),!1});</script>
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        window.oncontextmenu = function () {
+            return false;
+        }
+        $(document).keydown(function (event) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74)) {
+                return false;
+            }
+        });
+		$(document).bind('keydown', 'ctrl+s', function(){$('#save').click(); return false;});
+		
+    </script>
 <style>
 nav {
     width: 100%;
@@ -193,6 +207,7 @@ button.button.Bottom {display: none !important;}
 }
 </style>
 </head>
+<body oncontextmenu="return false">
 <button onclick="location.href='https://eapatil.github.io/'" type="button" class="button Top" style="vertical-align:middle"><span>Back</span></button>
   <header>
     <nav>
@@ -239,6 +254,8 @@ button.button.Bottom {display: none !important;}
   </main>
 
   <button onclick="location.href='https://eapatil.github.io/'" type="button" class="button Bottom" style="vertical-align:middle"><span>Back</span></button>
+  
+</body>
   <footer id="footer">
     Developed by Eleazer - For personal use 
   </footer>
