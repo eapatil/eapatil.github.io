@@ -5,21 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Parallax Scrolling</title>
       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script type="text/javascript">
-        window.oncontextmenu = function () {
-            return false;
-        }
-        $(document).keydown(function (event) {
-            if (event.keyCode == 123) {
-                return false;
-            }
-            else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74)) {
-                return false;
-            }
-        });
-		$(document).bind('keydown', 'ctrl+s', function(){$('#save').click(); return false;});
-		
-    </script>
 <style>
 * {
     padding: 0;
@@ -174,4 +159,19 @@ button.button.Bottom {display: none !important;}
  <button onclick="location.href='https://eapatil.github.io/'" type="button" class="button Bottom" style="vertical-align:middle"><span>Back</span></button>
 
 </body>
+    <script type="text/javascript">
+        window.oncontextmenu = function () {
+            return false;
+        }
+        $(document).keydown(function (event) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74)) {
+                return false;
+            }
+        });
+		$(document).bind('keydown', 'ctrl+s', function(){$('#save').click(); return false;});
+		
+    </script>
 </html>
