@@ -540,6 +540,7 @@ h1.eli {
 				<h2>Projects</h2>
 				<nav>
 					<ul class="cd-primary-nav">
+					        <li><a href="Bootstrap">Bootstrap builder</a></li>
 						<li><a href="Loaders">CSS Loaders</a></li>
 						<li><a href="RTSC">Responsive Text Size Converter</a></li>
 						<li><a href="PS">Parallax Scrolling</a></li>
