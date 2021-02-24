@@ -1,4 +1,5 @@
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script>$(document).ready(function(){$("#favicon").prop("href","https://eapatil.github.io/img/favicon.png")});</script>
 <style>
 	.main-content {
     max-width: 100% !important;
