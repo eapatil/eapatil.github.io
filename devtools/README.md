@@ -1,10 +1,10 @@
 # Free developer resources
 
-Developers and Open Source authors now have a massive amount of services offering free tiers, but it can be hard to find them all to make informed decisions.
+Developers and Open Source writers now have access to a variety of resources that offer free tiers, but finding them together to make educated choices can be challenging.
 
-This is a list of software (SaaS, PaaS, IaaS, etc.) and other offerings that have free tiers for developers.
+This is a compilation of developer-friendly applications and other facilities.
 
-The scope of this particular list is limited to things that infrastructure developers (System Administrator, DevOps Practitioners, etc.) are likely to find useful. 
+This list is for infrastructure engineers (System Administrators, DevOps Practitioners, and so on).
 
 Table of Contents
 =================
