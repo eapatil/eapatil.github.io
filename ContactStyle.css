@@ -102,7 +102,7 @@ button.button.Bottom {
   right: 0;
 }
 
-#name, #email {
+#name, #email, #tel {
   width: 50%;
 }
 
@@ -110,7 +110,7 @@ button.button.Bottom {
 .contact {
     max-width: 100%;
 }
-#name, #email {
+#name, #email, #tel {
   width: 100%;
 }
 }
