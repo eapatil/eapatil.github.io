@@ -110,6 +110,9 @@ button.button.Bottom {
 .contact {
     max-width: 100%;
 }
+#name, #email {
+  width: 100%;
+}
 }
 
 ::-webkit-scrollbar-track
