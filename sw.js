@@ -14,8 +14,8 @@ self.addEventListener('install', function(event) {
 	'/app.js',
 	'/EP_b_196.png',
 	'EP_MarkWhite.png',
-	'https://avatars2.githubusercontent.com/u/20547953?s=460&amp;u=9b920c74e7b413f8b64be506e35c114fa8655686&amp;v=4'
-	'https://www.pngkey.com/png/detail/80-802453_2018-supply-chain-solutions-linkedin-view-my-linkedin.png'
+	'https://avatars2.githubusercontent.com/u/20547953?s=460&amp;u=9b920c74e7b413f8b64be506e35c114fa8655686&amp;v=4',
+	'https://www.pngkey.com/png/detail/80-802453_2018-supply-chain-solutions-linkedin-view-my-linkedin.png',
 	'https://trailblazer.me/resource/1608686754000/assets/assets/images/profile/trailblazer-me.svg'
 	]);	  
   })
