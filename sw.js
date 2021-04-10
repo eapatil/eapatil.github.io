@@ -1,14 +1,15 @@
+
 var CACHE_STATIC_NAME = 'static-v4';
-var CACHE_DYNAMIC_NAME = 'dynamic-v2';
+var CACHE_DYNAMIC_NAME = 'dynamic-v4';
 
 self.addEventListener('install', function(event) {
   console.log('[Service Worker] Installing Service Worker ...', event);
   event.waitUntil(
-  caches.open(CACHE_STATIC_NAME)
-  .then(function(cache) {
-	console.log('[service Worker] Precaching App');
-	cache.addAll([
-	'/',
+    caches.open(CACHE_STATIC_NAME)
+      .then(function(cache) {
+        console.log('[Service Worker] Precaching App Shell');
+        cache.addAll([
+        '/',
 	'/index.html',
 	'/assets/css/style.css?v=889583eed8d616ca038abf8b717f5b574b87f904',
 	'https://code.jquery.com/jquery-2.2.4.min.js',
