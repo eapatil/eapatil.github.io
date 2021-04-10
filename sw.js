@@ -38,7 +38,7 @@ self.addEventListener('fetch', function(event) {
 			return fetch(event.request)
 			.then(function (res) {
 				return caches.open('dynamic')
-				.then(funstion(cache){
+				.then(function(cache){
 					cache.put(event.request.url, res.clone());
 					return res;
 				})
