@@ -10,15 +10,15 @@ self.addEventListener('install', function(event) {
         console.log('[Service Worker] Precaching App Shell');
         cache.addAll([
         '/',
-        '/index.html',
-	'/Contact.html',
-	'/EP_b_196.png',
-	'/offline.html',
-	'/main.css',
-	'/promise.js',
-	'/fetch.js',
-	'/app.js',
-	'/EP_MarkWhite.png'
+        'index.html',
+	'Contact.html',
+	'EP_b_196.png',
+	'offline.html',
+	'main.css',
+	'promise.js',
+	'fetch.js',
+	'app.js',
+	'EP_MarkWhite.png'
 	]);	  
   })
   
