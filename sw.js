@@ -1,6 +1,6 @@
 
-var CACHE_STATIC_NAME = 'static-v1';
-var CACHE_DYNAMIC_NAME = 'dynamic-v1';
+var CACHE_STATIC_NAME = 'static-v2';
+var CACHE_DYNAMIC_NAME = 'dynamic-v2';
 
 self.addEventListener('install', function(event) {
   console.log('[Service Worker] Installing Service Worker ...', event);
@@ -11,6 +11,8 @@ self.addEventListener('install', function(event) {
         cache.addAll([
         '/',
 	'/index.html',
+	'/Contact.html',
+        '/offline.html',
 	'/assets/css/style.css?v=889583eed8d616ca038abf8b717f5b574b87f904',
 	'https://code.jquery.com/jquery-2.2.4.min.js',
 	'/promise.js',
@@ -45,24 +47,26 @@ self.addEventListener('activate', function(event) {
 
 self.addEventListener('fetch', function(event) {
   event.respondWith(
-	caches.match(event.request)
-	.then(function(response){
-		if (response){
-			return response;
-		} else {
-			return fetch(event.request)
-			.then(function (res) {
-				return caches.open(CACHE_DYNAMIC_NAME)
-				.then(function(cache){
-					cache.put(event.request.url, res.clone());
-					return res;
-				})
-			})
-			.catch(function(err) {
-			
-			});
-		}
-	})
-  
+    caches.match(event.request)
+      .then(function(response) {
+        if (response) {
+          return response;
+        } else {
+          return fetch(event.request)
+            .then(function(res) {
+              return caches.open(CACHE_DYNAMIC_NAME)
+                .then(function(cache) {
+                  cache.put(event.request.url, res.clone());
+                  return res;
+                })
+            })
+            .catch(function(err) {
+              return caches.open(CACHE_STATIC_NAME)
+                .then(function(cache) {
+                  return cache.match('/offline.html');
+                });
+            });
+        }
+      })
   );
 });
