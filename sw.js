@@ -1,6 +1,6 @@
 
-var CACHE_STATIC_NAME = 'static-v6';
-var CACHE_DYNAMIC_NAME = 'dynamic-v6';
+var CACHE_STATIC_NAME = 'static-v7';
+var CACHE_DYNAMIC_NAME = 'dynamic-v7';
 
 self.addEventListener('install', function(event) {
   console.log('[Service Worker] Installing Service Worker ...', event);
@@ -19,9 +19,7 @@ self.addEventListener('install', function(event) {
 	'/promise.js',
 	'/fetch.js',
 	'/app.js',
-	'/EP_MarkWhite.png',
-	'https://www.pngkey.com/png/detail/80-802453_2018-supply-chain-solutions-linkedin-view-my-linkedin.png',
-	'https://trailblazer.me/resource/1608686754000/assets/assets/images/profile/trailblazer-me.svg'
+	'/EP_MarkWhite.png'
 	]);	  
   })
   
