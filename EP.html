@@ -1,6 +1,28 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EP - Test touchscreen to text</title>
+    <link rel="shortcut icon" type="image/png" href="EP_b_196.png">
+    <link rel="shortcut icon" sizes="196x196" href="EP_b_196.png">
+    <link rel="apple-touch-icon" href="EP_b_196.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Eleazer's App">
+    <link rel="apple-touch-icon" href="EP_W_57X57.png" sizes="57X57">
+    <link rel="apple-touch-icon" href="EP_W_60X60.png" sizes="60X60">
+    <link rel="apple-touch-icon" href="EP_W_72X72.png" sizes="72X72">
+    <link rel="apple-touch-icon" href="EP_W_76X76.png" sizes="76X76">
+    <link rel="apple-touch-icon" href="EP_W_114X114.png" sizes="114X114">
+    <link rel="apple-touch-icon" href="EP_W_120X120.png" sizes="120X120">
+    <link rel="apple-touch-icon" href="EP_W_144X144.png" sizes="144X144">
+    <link rel="apple-touch-icon" href="EP_W_152X152.png" sizes="152X152">
+    <link rel="apple-touch-icon" href="EP_W_180X180.png" sizes="180X180">
+    <meta name="msapplication-TileImage" content="EP_W_144X144.png">
+    <meta name="msapplication-TileColor" content="#000">
+    <meta name="theme-color" content="#000">
     <script type="text/javascript" src="js/handwriting.canvas.js"></script>
     <style>
       html,
@@ -100,5 +122,36 @@
         element.dispatchEvent(clickEvent);
       }
     </script>
+    <button onclick="location.href='https://eapatil.github.io/'" type="button" class="button Bottom" style="vertical-align:middle">
+      <span>Back</span>
+    </button>
+    <script src="app.js"></script>
   </body>
+  <script type="text/javascript">
+    window.oncontextmenu = function() {
+      return false;
+    }
+    $(document).keydown(function(event) {
+      if (event.keyCode == 123) {
+        return false;
+      } else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74)) {
+        return false;
+      }
+    });
+    $(document).bind('keydown', 'ctrl+s', function() {
+      $('#save').click();
+      return false;
+    });
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-32ZM2EYB6M"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-32ZM2EYB6M');
+  </script>
 </html>
